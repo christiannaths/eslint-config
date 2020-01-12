@@ -1,7 +1,10 @@
 {
   "name": "@christiannaths/eslint-config",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "My personal ESLint config",
+  "main": "index.json",
+  "repository": "git@github.com:christiannaths/eslint-config.git",
+  "author": "Christian Naths <christiannaths@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
     "eslint": "^6.8.0",
