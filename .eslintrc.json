@@ -1,0 +1,31 @@
+{
+  "env": {
+    "shared-node-browser": true, // Globals common to both Node.js and Browser.
+    "commonjs": true, // CommonJS global variables and CommonJS scoping.
+    "es2021": true // node16
+  },
+  "plugins": ["import", "node", "prettier"],
+  "extends": ["eslint:recommended", "plugin:import/recommended"],
+  "rules": {
+    "prettier/prettier": "off",
+    "import/max-dependencies": ["warn", { "max": 15 }],
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "never",
+        "groups": []
+      }
+    ],
+    "no-console": [
+      "warn",
+      { "allow": ["info", "warn", "error", "time", "timeEnd"] }
+    ],
+    "no-unused-vars": [
+      "warn",
+      { "args": "all", "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }
+    ],
+    "no-debugger": "warn",
+    "no-shadow": "error",
+    "no-unreachable": "warn"
+  }
+}
