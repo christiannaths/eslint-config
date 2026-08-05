@@ -1,25 +1,24 @@
-# `@christiannaths/eslint-config`
+# @christiannaths/eslint-config
 
-> My personal [ESLint](https://eslint.org/docs/developer-guide/shareable-configs) config.
+My personal ESLint flat config for JavaScript and TypeScript.
 
 ## Usage
 
-**Install**:
+Install ESLint, TypeScript, and the config:
 
 ```bash
-$ yarn add --dev \
-  eslint \
-  eslint-plugin-import \
-  eslint-plugin-node \
-  eslint-plugin-prettier \
-  eslint-plugin-react \
-  @christiannaths/eslint-config
+npm install --save-dev eslint typescript @christiannaths/eslint-config
 ```
 
-**Edit `.eslintrc.json`**:
+Create `eslint.config.js`:
 
-```jsonc
-{
-  "extends": "@christiannaths/eslint-config"
-}
+```js
+import christiannaths from "@christiannaths/eslint-config";
+
+export default [...christiannaths];
 ```
+
+ESLint 10 and Node.js 20.19 or newer are required. The config includes ESLint's
+recommended rules, import checks, the shared Node/browser globals, and the
+project's custom rule overrides. TypeScript rules apply only to `.ts`, `.tsx`,
+`.mts`, and `.cts` files.
