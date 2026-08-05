@@ -13,9 +13,9 @@ npm install --save-dev eslint typescript @christiannaths/eslint-config
 Create `eslint.config.js`:
 
 ```js
-import christiannaths from "@christiannaths/eslint-config";
+import config from "@christiannaths/eslint-config";
 
-export default [...christiannaths];
+export default [...config];
 ```
 
 ESLint 10 and Node.js 20.19 or newer are required. The config includes ESLint's
